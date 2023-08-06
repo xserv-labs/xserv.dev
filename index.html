@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>XServ Laboratories</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            background: black;
+        }
+
+        #background {
+            background: url("./background.jpg") no-repeat center center;
+            background-size: cover;
+            min-height: 100vh;
+        }
+
+        #blur {
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0,0,0,0.25);
+            box-shadow: 0 0 100px rgba(0,0,0,0.6) inset;
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #img-container {
+            max-width: 950px;
+            height: 50%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            max-width: 80%;
+            height: 100%;
+        }
+
+    </style>
+</head>
+<body>
+<div id="background">
+    <div id="blur">
+        <a href="https://github.com/xserv-labs" target="_blank" id="img-container">
+            <img alt="XServ Laboratories logo" src="./logo.svg">
+        </a>
+    </div>
+</div>
+</body>
+</html>
